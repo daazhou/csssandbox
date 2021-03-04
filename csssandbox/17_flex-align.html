@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Basics</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-container{
+      /* aligns the boxes side by size using .flex-container */
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: row;
+      /* cross axis align */
+      align-items: center;
+      /* flex start is on the top where it sets the boxes to the top */
+      /* flex end put the container on the bottom  */
+      /* align items is on the cross axis */
+      justify-content: center;
+      height: 50vh;
+   
+    }
+    .item{
+      background: #f4f4f4;
+      border: #ccc solid 2px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      /* width: 200px; */
+      /* flex: 1; */
+      
+    }
+
+    /* .item-2 { can do individual items and structure them with the box
+      flex: 2;
+    }
+     */
+
+    .item-1{
+      align-self: flex-start;
+    }
+    .item-3{
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item item-1">
+      <h3>item 1</h3>
+    </div>
+    <div class="item item-2">
+      <h3>item 2</h3>
+    </div>
+    <div class="item item-3">
+      <h3>item 3</h3>
+    </div>
+    <!-- as long as anything is added into the container of the flex box it can appear in the container -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backgrounds & Borders</title>
+  <style>
+    #box-1{
+      background-color: blanchedalmond;
+      /* border-width: 3px;
+      border-color: red;
+      border-style: solid; */ /* these lines can be condensed into one line represented by the bottom below */
+      border: 3px solid red;
+      border-radius: 10px; /* border radius can round the corners of the border */
+    }
+    #box-2{
+      background: #333;
+      color: white;
+      border-top: turquoise solid 3px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    #box-3{
+      /* background-image: url('./css/img/stars.jpg'); 
+      /* so i put the img folder in the css repository so i had to path from css -> img -> galaxy  */
+      /* background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; */ 
+      background:url('./css/img/stars.jpg') no-repeat center center/cover;
+      /* condenses the 3 lines of css into one line, first image url then no repeats of images then the centering of the image and then the center cover */
+      color: white;
+      height: 400px;
+      width: 600px;
+    }
+    #box-4{
+      background: url('./css/img/leaf.png') no-repeat center center;
+      background-attachment: fixed; 
+      /* image is fixed to the background */
+    }
+  </style>
+</head>
+<body>
+  <div id="box-1">
+    <h3>Box 1</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+  </div>
+  <br>
+  <div id="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+  </div>
+  <div id="box-3">
+    <h3>Box Three</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+  </div>
+  <div id="box-4">
+    <h3>Box Four</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis magnam dolor voluptas architecto blanditiis sequi ad libero dicta nulla!</p>
+  </div>
+</body>
+</html>

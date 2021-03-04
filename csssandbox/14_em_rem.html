@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em and Rem</title>
+  <style>
+    #box-1{
+      font-size: 20px;
+    }
+    #box-1 p{
+      font-size: 1.5em;
+      padding: 1em;
+    }
+
+    /* to change font size of a nested ul */
+    /* em makes the nested element get bigger and bigger, see line 37 */
+    #box-1 ul{
+      font-size: 1.2em;
+    }
+    html{
+      font-size: 62.5%;
+      /* if html default pixel size is 10px, then the 1.6rem would be 16 px, 1.7rem = 17 px 
+      62.5% is also 10px to be exact, can eyeball the design*/
+    }
+    #box-2 h3{
+      font-size: 2rem;
+    }
+
+    #box-2 p{
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+      /* rem is based on the html root element so it is not affected by em */
+      /* really streamlines the spacing of lines using rem */
+    }
+    
+  </style> 
+</head>
+<body>
+  <div id="box-1">
+    <h3>box one</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laboriosam quos repudiandae debitis, cumque corrupti error consequuntur, necessitatibus delectus ratione quas quae. Quos sunt autem et voluptatum ea totam optio.</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3
+          </li>
+        </ul>
+      </li>
+      <li>4</li>
+    </ul>
+  </div>
+  <div id="box-2">
+    <h3>box two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat laboriosam quos repudiandae debitis, cumque corrupti error consequuntur, necessitatibus delectus ratione quas quae. Quos sunt autem et voluptatum ea totam optio.</p>
+  </div>
+  
+  
+</body>
+</html>

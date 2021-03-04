@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links & Buttons</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+    /* when hovering the click here it is turned coral */
+    a:hover{ 
+      color: coral;
+    
+    }
+    /* a:visited{      
+      color: red; 
+    } */
+    a:active{ /* when clicked or held it is red*/
+      color: red;
+    }
+
+    /* Button Styling with CSS */
+    .btn{
+      background: #4c6ca0;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    
+
+    }
+
+    .btn:hover{
+      color: #f4f4f4;
+      background: #446190;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <!-- this is a button class and it dictates the first and second button, first one is an a class button where a link can be attached while the second button class is just a button with no a href -->
+  <a class="btn" href="#">My Link</a>
+  <br>
+  <br>
+  <button class="btn">My Button</button>
+  
+</body>
+</html>

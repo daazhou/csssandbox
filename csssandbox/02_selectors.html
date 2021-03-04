@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+    /* Element Selector */
+    /* background color can be applied to the background of the site */
+    body {
+     background-color: #333; 
+    }
+    /*green-heading is basically targeting the first h2 */
+    /* . is for classes # is for id */
+    .primary-heading{ 
+      color: green;
+    }
+    /* #sign is for id and can be given a background color */
+    #welcome{
+      background-color: #f4f4f4;
+    }
+
+    /* multiple selectors */
+    /* can put multiple things like h2, paragraph, header, they would take all the styles in there */
+    #welcome, #about{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    }
+
+    /* nested selector */
+    #welcome p {
+    font-size: 20px;  
+    }
+    #about{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <div id="welcome">
+      <!-- primary-heading since there can be multiple headings, i.e if companies wants to change the color of their header. green-heading -> primary-headingq -->
+      <h2 class="primary-heading">Welcome</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem optio vero? Voluptates eveniet molestiae architecto quis aperiam dolore quisquam!</p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos iste quam labore temporibus doloremque quisquam quis perspiciatis laboriosam corrupti.</p>
+    </div>
+</body>
+</html>
